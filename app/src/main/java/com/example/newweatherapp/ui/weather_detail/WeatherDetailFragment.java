@@ -1,16 +1,15 @@
 package com.example.newweatherapp.ui.weather_detail;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.newweatherapp.R;
 import com.example.newweatherapp.databinding.FragmentWeatherDetailBinding;
@@ -31,7 +30,7 @@ public class WeatherDetailFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         NavHostFragment navHostFragment = (NavHostFragment) requireActivity().getSupportFragmentManager().
-                findFragmentById(R.id.nav_host_fragment_container);
+                findFragmentById(R.id.nav_host);
         controller = navHostFragment.getNavController();
     }
 

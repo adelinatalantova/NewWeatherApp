@@ -8,11 +8,8 @@ import com.example.newweatherapp.databinding.ActivityMainBinding;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
-
 @AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
-
-
     ActivityMainBinding binding;
 
     @Override
